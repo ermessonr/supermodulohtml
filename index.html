@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <a href=""></a>
 </head>
-<body>
+<body translate="true">
     <header id="home">
         <nav>
             <div class="logo">
@@ -93,7 +93,7 @@
                     </div>
                     <hr>
                     <div class="card-preco">
-                        <p>R$ <span>299</span>,90</p>
+                        <p  data-valor="299.90">R$ <span>299</span>,90</p>
                     </div>
                     <div class="card-btn-acao">
                         <a class="btn-padrao" href="">Veja Mais</a>
@@ -114,7 +114,7 @@
                     </div>
                     <hr>
                     <div class="card-preco">
-                        <p>R$ <span>399</span>,90</p>
+                        <p  data-valor="399.90">R$ <span>399</span>,90</p>
                     </div>
                     <div class="card-btn-acao">
                         <a class="btn-padrao" href="">Veja Mais</a>
@@ -135,7 +135,7 @@
                     </div>
                     <hr>
                     <div class="card-preco">
-                        <p>R$ <span>499</span>,90</p>
+                        <p  data-valor="499.90">R$ <span>499</span>,90</p>
                     </div>
                     <div class="card-btn-acao">
                         <a class="btn-padrao" href="">Veja Mais</a>
@@ -156,7 +156,7 @@
                     </div>
                     <hr>
                     <div class="card-preco">
-                        <p>R$ <span>599</span>,90</p>
+                        <p data-valor="599.90">R$ <span>599</span>,90</p>
                     </div>
                     <div class="card-btn-acao">
                         <a class="btn-padrao" href="">Veja Mais</a>
@@ -164,6 +164,35 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <section class="container skills" id="sobre">
+        <div>
+            <h1>Habilidades</h1>
+            
+            <p>No curso do Carioca, os alunos aprenderão habilidades essenciais em HTML, CSS e JavaScript, focando na criação de um site de venda de cursos. Essa experiência prática prepara os participantes para desenvolverem sites modernos e interativos, abrindo portas no mundo do desenvolvimento web.
+            </p>
+
+            <div class="icones">
+                <div class="skills-icones">
+                    <div>
+                        <img src="./img/ico/html.png" alt="Art Design">
+                        <span class="titulo-skills"><h3>HTML</h3></span>
+                        <progress id="file" value="80" max="100">80%</progress>
+                    </div>
+                    <div>
+                        <img src="./img/ico/css.png" alt="">
+                        <span class="titulo-skills"><h3>CSS</h3></span>
+                        <progress id="file" value="99" max="100">99%</progress>
+                    </div>
+                    <div>
+                        <img src="./img/ico/js.png" alt="">
+                        <span class="titulo-skills"><h3>JS</h3></span>
+                        <progress id="file" value="60" max="100">60%</progress>
+                    </div> 
+                </div>
+            </div>
+
     </section>
     
         <footer class="rodape container" id="contato">
@@ -174,9 +203,10 @@
             </div>
             <div class="coluna">
               <h3>Redes Sociais</h3>
-              <p><a href="#">Facebook</a></p>
-              <p><a href="#">Instagram</a></p>
-              <p><a href="#">Twitter</a></p>
+              <p><a href="https://fb.com">Facebook</a></p>
+              <p><a href="https://instagram.com">Instagram</a></p>
+              <p><a href="https://x.com">Twitter</a></p>
+              <p hidden><a href="https://orkut.com">Orkut</a></p>
             </div>
             <div class="coluna">
               <h3>Fale Conosco</h3>
@@ -184,7 +214,7 @@
                 <input type="text" placeholder="Nome" name="nome">
                 <input type="text" placeholder="Telefone" name="telefone">
                 <input type="email" placeholder="Email" name="email">
-                <textarea placeholder="Sua mensagem"></textarea>
+                <textarea placeholder="Sua mensagem" spellcheck="true"></textarea>
                 <button type="submit">Enviar</button>
               </form>
             </div>

@@ -214,6 +214,56 @@ p {
   padding: 1em;
 }
 
+.skills {
+  background-color: #2f2f2f;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.skills h1 {
+  text-align: center;
+  font-size: 2em;
+  font-family: roboto, sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+.skills p {
+  text-align: center;
+  color: #dadada;
+  margin-left: 2.5em;
+  margin-right: 2.5em;
+  padding: 1em;
+  font-size: 1.2em;
+}
+
+.icones {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skills-icones {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10em;
+  flex-wrap: wrap;
+}
+
+.skills-icones img {
+  max-width: 200px;
+  filter: grayscale(100%);
+}
+
+.skills-icones img:hover {
+  filter: grayscale(0%);
+}
+
+.titulo-skills {
+  color: #dadada;
+  text-align: center;
+}
+
 .rodape {
   display: flex;
   justify-content: space-around;
